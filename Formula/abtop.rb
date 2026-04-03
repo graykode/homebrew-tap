@@ -1,25 +1,25 @@
 class Abtop < Formula
   desc "AI agent monitor for your terminal"
   homepage "https://github.com/graykode/abtop"
-  version "0.2.7"
+  version "0.2.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/graykode/abtop/releases/download/v0.2.7/abtop-aarch64-apple-darwin.tar.xz"
-      sha256 "e7bc7d35f46e04c2b09eed80dd5f3c4056afb48e5bc933a684ec77a066d42158"
+      url "https://github.com/graykode/abtop/releases/download/v0.2.8/abtop-aarch64-apple-darwin.tar.xz"
+      sha256 "e512ca8ef1647f75012aadcf2444c6c87b367e6bfd2d0d973ffc027eb5a42b86"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/graykode/abtop/releases/download/v0.2.7/abtop-x86_64-apple-darwin.tar.xz"
-      sha256 "083972f8a8a31ae1f1c3b06b4a79a895423faf43869c56d7d7d9574974afafa9"
+      url "https://github.com/graykode/abtop/releases/download/v0.2.8/abtop-x86_64-apple-darwin.tar.xz"
+      sha256 "a6efe68f90339c49922256a19942d6ed1d8308a272632a93668adb93e1cd8735"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/graykode/abtop/releases/download/v0.2.7/abtop-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "967bf0d569832162539cbfa11dfe149a19e58f2e52d507ea6042e79562368ce1"
+      url "https://github.com/graykode/abtop/releases/download/v0.2.8/abtop-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f305603ef7288587f1a7a0bde9703cf5cf144731a3f0b30313be7cfa99850355"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/graykode/abtop/releases/download/v0.2.7/abtop-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "99928cb39f672ba3280c0b4f829609df5d118bff3fa8494c806eef92057431d6"
+      url "https://github.com/graykode/abtop/releases/download/v0.2.8/abtop-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "74cc28add4769909e3731eec4011bf2780306da432e7a3f04a90504432cfafd4"
     end
   end
   license "MIT"
