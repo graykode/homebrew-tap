@@ -1,33 +1,35 @@
 class Abtop < Formula
   desc "AI agent monitor for your terminal"
   homepage "https://github.com/graykode/abtop"
-  version "0.3.8"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/graykode/abtop/releases/download/v0.3.8/abtop-aarch64-apple-darwin.tar.xz"
-      sha256 "f4f94dfe3e0131559c371838b8797ce1dcc649901498b48ad8be2d0666256a53"
+      url "https://github.com/graykode/abtop/releases/download/v0.4.0/abtop-aarch64-apple-darwin.tar.xz"
+      sha256 "7ae9686ad3a527ee42e7ef798be86d6044ab3e95fa493cba261ca03fb8544506"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/graykode/abtop/releases/download/v0.3.8/abtop-x86_64-apple-darwin.tar.xz"
-      sha256 "80392b0ccc9c6ef77868e5cb97f1ce0fecbb0a32e4721557218784f4327c4b8c"
+      url "https://github.com/graykode/abtop/releases/download/v0.4.0/abtop-x86_64-apple-darwin.tar.xz"
+      sha256 "d20969347fcd3362eba7ee6541fc33ace238b65e2d568e6cbb86b6e4e0a1bc2a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/graykode/abtop/releases/download/v0.3.8/abtop-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "82d7c426e7f84d59f1b28d646630d9b179c03a687efbe14fc58f842ac7ff646e"
+      url "https://github.com/graykode/abtop/releases/download/v0.4.0/abtop-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f3a0d8fe6b44ad99ee6543f93d2fac9272302b32c446d066ac2d95154f0e01c1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/graykode/abtop/releases/download/v0.3.8/abtop-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "32b050b9acf5dc8c2f08b6927e19441ddff90eb4ee8204da2eb58bcf742a9b24"
+      url "https://github.com/graykode/abtop/releases/download/v0.4.0/abtop-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "90e6cb04a943f564eeb606922806117d80266d587a4b43d697a224f994f36719"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
+    "aarch64-pc-windows-gnu":    {},
     "aarch64-unknown-linux-gnu": {},
     "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
     "x86_64-unknown-linux-gnu":  {},
   }.freeze
 
